@@ -481,7 +481,7 @@ End DepExp.
 Section Totality.
 
 (* In which we will reflect well-typedness into something *)
-(* and use that to compile things totally. *)
+(* and use that to evaluate and compile things totally. *)
 
 Inductive WellTyped : exp -> etype -> Type := 
   | WTNum {n} : WellTyped (ENum n) ETNat
